@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<head>
+  <meta charset='utf-8' />
+  <title>Snipcheat cheat-sheet</title>
+  <style>
+    /*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+[hidden] {
+    display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+    font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+/*
+ * Removes default margin.
+ */
+body {
+    margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+    outline: thin dotted;
+}
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+    outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+h1 {
+    font-size: 2em;
+}
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+    font-weight: bold;
+}
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+dfn {
+    font-style: italic;
+}
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/*
+ * Sets consistent quote types.
+ */
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+small {
+    font-size: 80%;
+}
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+img {
+    border: 0;
+}
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+    overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+    margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+    line-height: normal;
+}
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Table CSS */
+table.snippets{
+  text-align: left;
+  width: 100%;
+}
+.snippets tr:nth-child(odd){
+  background: #e8edff;
+}
+.snippets td{
+  color: #669;
+  padding: 8px;
+}
+.snippets th{
+  color: #039;
+  padding: 10px 8px;
+}
+
+/* Custom styles */
+body{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  width: 1152px;
+}
+.padded{
+  padding: 1em;
+}
+.hpadded{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 252px;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+section{
+  float: left;
+  margin-left: 272px;
+  width: 880px;
+}
+.scope_links{
+  list-style: none;
+  padding: 0;
+}
+.scope_links li a{
+  display: block;
+  padding: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.scope_links li:nth-child(odd) a{
+  background: #e8edff;
+}
+.scope_links li a:hover{
+  background: #fffbc3;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <h2 class='hpadded'>Scopes</h2>
+    <ul class='scope_links'>
+      <li title='text.html'>
+        <a href='#text_html'>text.html</a>
+      </li>
+    </ul>
+    <small class='padded'>
+      Generated with
+      <a href='https://github.com/tadast/snipcheat'>Snipcheat</a>
+    </small>
+  </nav>
+  <section>
+    <h2 class='hpadded' id='text_html'>text.html</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title='&lt;button type="$1"&gt;$2&lt;/button&gt;$0'>
+        <td>button</td>
+        <td><button></td>
+      </tr>
+      <tr title='&lt;datalist&gt;&#x000A;	${1:&lt;option${2: value="$3"}&gt;$4&lt;/option&gt;}$5&#x000A;&lt;/datalist&gt;$0'>
+        <td>datalist</td>
+        <td><datalist></td>
+      </tr>
+      <tr title='&lt;fieldset&gt;&#x000A;	${1:&lt;legend&gt;${2:title or explanatory caption}&lt;/legend&gt;}$3&#x000A;&lt;/fieldset&gt;$0'>
+        <td>fieldset</td>
+        <td><fieldset></td>
+      </tr>
+      <tr title='&lt;form action="${1:${TM_FILENAME/(.*?)\..*/$1_submit/}}" method="${2:get}" accept-charset="utf-8"&gt;&#x000A;	$1&#x000A;	${2:&lt;p&gt;&lt;input type="submit" value="submit"${TM_POLYGLOT}&gt;&lt;/p&gt;}&#x000A;&lt;/form&gt;$0'>
+        <td>form</td>
+        <td><form></td>
+      </tr>
+      <tr title='&lt;input type="${1:radio}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - radio</td>
+      </tr>
+      <tr title='&lt;input type="${1:password}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - password</td>
+      </tr>
+      <tr title='&lt;input type="${1:time}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - time</td>
+      </tr>
+      <tr title='&lt;input type="${1:datetime-local}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - datetime-local</td>
+      </tr>
+      <tr title='&lt;input type="${1:color}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - color</td>
+      </tr>
+      <tr title='&lt;input type="${1:reset}" name="$2" value="$3"&gt;$0'>
+        <td>input</td>
+        <td>input - reset</td>
+      </tr>
+      <tr title='&lt;input type="${1:checkbox}" name="$2" value="$3"&gt;$0'>
+        <td>input</td>
+        <td>input - checkbox</td>
+      </tr>
+      <tr title='&lt;input type="${1:tel}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - tel</td>
+      </tr>
+      <tr title='&lt;input type="${1:url}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - url</td>
+      </tr>
+      <tr title='&lt;input type="${1:hidden}" name="$2" value="$3"&gt;$0'>
+        <td>input</td>
+        <td>input - hidden</td>
+      </tr>
+      <tr title='&lt;input type="${1:date}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - date</td>
+      </tr>
+      <tr title='&lt;input type="${1:week}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - week</td>
+      </tr>
+      <tr title='&lt;input type="${1:datetime}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - datetime</td>
+      </tr>
+      <tr title='&lt;input type="${1:text}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - text</td>
+      </tr>
+      <tr title='&lt;input type="${1:number}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - number</td>
+      </tr>
+      <tr title='&lt;input type="${1:month}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - month</td>
+      </tr>
+      <tr title='&lt;input type="${1:search}" name="$2" value="$3" placeholder="$4"${5: results="${6:5}${5: autosave="${6:some_unique_value}"}&gt;$0'>
+        <td>input</td>
+        <td>input - search</td>
+      </tr>
+      <tr title='&lt;input type="${1:email}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - email</td>
+      </tr>
+      <tr title='&lt;input type="${1:image}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - image</td>
+      </tr>
+      <tr title='&lt;input type="${1:range}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - range</td>
+      </tr>
+      <tr title='&lt;input type="${1:button}" name="$2" value="$3"&gt;$0'>
+        <td>input</td>
+        <td>input - button</td>
+      </tr>
+      <tr title='&lt;input type="${1:file}" name="$2" value="$3" placeholder="$4"&gt;$0'>
+        <td>input</td>
+        <td>input - file</td>
+      </tr>
+      <tr title='&lt;input type="${1:submit}" name="$2" value="$3"&gt;$0'>
+        <td>input</td>
+        <td>input - submit</td>
+      </tr>
+      <tr title='&lt;keygen keytype="rsa"&gt;$1&lt;/keygen&gt;%0'>
+        <td>keygen</td>
+        <td><keygen></td>
+      </tr>
+      <tr title='&lt;label${1: for="$2"}&gt;$3&lt;/label&gt;&#x000A;input$0'>
+        <td>label</td>
+        <td><label></td>
+      </tr>
+      <tr title='&lt;label&gt;&lt;input type="${1:text/submit/hidden/button/etc}" name="$2" value="$3"${TM_XHTML}&gt;&lt;/label&gt;$0'>
+        <td>label</td>
+        <td><label> with <input></td>
+      </tr>
+      <tr title='&lt;legend$&gt;${1:title or explanatory caption}&lt;/legend&gt;$0'>
+        <td>legend</td>
+        <td><legend></td>
+      </tr>
+      <tr title='&lt;meter${1: value="$2"}${3: min="$4"}${5: low="$6"}${7: high="$8"}${9: max="$10"}${11: optimum="$12"}&gt;$13&lt;/meter&gt;$0'>
+        <td>meter</td>
+        <td><meter></td>
+      </tr>
+      <tr title='&lt;optgroup&gt;&#x000A;	${1:&lt;option${2: value="$3"}&gt;$4&lt;/option&gt;}$5&#x000A;&lt;/optgroup&gt;$0'>
+        <td>optgroup</td>
+        <td><optgroup></td>
+      </tr>
+      <tr title='&lt;option${1: value="$2"}&gt;$3&lt;/option&gt;}&#x000A;option$0'>
+        <td>option</td>
+        <td><option></td>
+      </tr>
+      <tr title='&lt;output name="$1"&gt;$2&lt;/output&gt;$0'>
+        <td>output</td>
+        <td><output></td>
+      </tr>
+      <tr title='&lt;progress${1: value="$2"}${3: max="$4"}&gt;$5&lt;/progress&gt;$0'>
+        <td>progress</td>
+        <td><progress></td>
+      </tr>
+      <tr title='&lt;select name="$1"${2:${3: multiple}}&gt;&#x000A;	${4:&lt;option${5: value="$6"}&gt;$7&lt;/option&gt;}$8&#x000A;	option$9&#x000A;&lt;/select&gt;$0'>
+        <td>select</td>
+        <td><select></td>
+      </tr>
+      <tr title='&lt;textarea name="$1"&gt;$2&lt;/textarea&gt;$0'>
+        <td>textarea</td>
+        <td><textarea></td>
+      </tr>
+    </table>
+  </section>
+</body>
